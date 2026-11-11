@@ -1,0 +1,13 @@
+---
+description: 영어를 한국어로 쓸 때 translation-checker로 직역 어색함을 고친다
+alwaysApply: true
+---
+
+영어를 한국어로 짓거나 고칠 때는 translation-checker를 거친 문장을 최종본으로 쓴다.
+
+1. 영어 원문과 한국어 초안을 `check_translation`에 넘긴다. 문장이 여러 개면 `check_translations`를 쓴다.
+2. 응답의 `revised`를 그대로 쓴다.
+3. `way`가 길, 경로, 방향이면 `길`이다. 수단이면 `방법`이다.
+4. MCP 도구를 부르지 못하면 `mcp-servers/translation-checker/checker.js`의 `checkTranslation` 결과를 같은 기준으로 반영한다.
+
+path, route, lane, road도 `길`로 둔다. tower는 `포탑`, mine은 `지뢰`, wave는 `웨이브`, stage는 `스테이지`, gold는 `골드`이다.

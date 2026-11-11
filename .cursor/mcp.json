@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "translation-checker": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/mcp-servers/translation-checker/index.js"]
+    }
+  }
+}
